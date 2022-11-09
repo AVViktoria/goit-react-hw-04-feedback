@@ -1,7 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
+export default function Statistics({
+  good,
+  neutral,
+  bad,
+  total,
+  positiveFeedback,
+}) {
   return (
     <ul className="statListBox">
       <li className="statList">Good: {good}</li>
@@ -11,8 +17,7 @@ const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
       <li className="statList">Positive feedback: {positiveFeedback}%</li>
     </ul>
   );
-};
-export default Statistics;
+}
 
 Statistics.propTypes = {
   good: PropTypes.number.isRequired,
