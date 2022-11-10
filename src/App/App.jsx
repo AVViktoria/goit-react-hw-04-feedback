@@ -17,8 +17,7 @@ const [bad, setBad] = useState(0);
 
   // //*  handle fn for buttons   //
   const handleLeaveFeedback = (evt) => {
-    // const options = evt.target.innerText.toLowerCase();
-    const options = evt.currentTarget;
+    const options = evt.currentTarget.innerText.toLowerCase();
      console.log(options)
     switch (options) {
       case 'good':
